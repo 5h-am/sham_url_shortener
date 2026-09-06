@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+    --primary-teal: #349c94;
+    --charcoal: #1e293b;
+    --subtle-gray: #f8fafc;
+    --accent-mint: #d1f2f0;
+    --main-font: "Hanken Grotesk", sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+}
