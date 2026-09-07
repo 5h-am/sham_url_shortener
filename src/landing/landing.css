@@ -1,1 +1,24 @@
+.start-for-free-btn{
+    transition: all 0.3s ease-in 0.4s;
+}
+
+
+.start-for-free-btn:hover {
+    background-color: var(--accent-mint);
+    color: #000;
+    cursor: pointer;
+}
+
+.url-block--moved {
+    transition: transform 1s ease-in 0.5s;
+    transform: translateY(10px);
+}
+
+.close-btn {
+    transition: all 0.3s ease-in 0.2s;
+}
+.close-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
 
