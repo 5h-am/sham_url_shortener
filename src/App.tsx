@@ -8,12 +8,13 @@ import { ResetPwd } from "./auth/resetPwd";
 import { DashboardNav } from "./dashboard/dashboard";
 import { MyLinks } from "./dashboard/myLinks";
 import { AnalyticsPage } from "./dashboard/analytics";
+import { Toaster } from "react-hot-toast";
 
 const router = createBrowserRouter([{ path: "/", element: <LandingPage /> }, {path: '/signIn', element: <SignIn/>},
     {path: '/signUp', element: <SignUp/>},
     {path: '/forget-pwd', element: <ForgetPwd/>},
-    {path:'/reset-pwd', element: <ResetPwd/>},
-    {path:'/dashboard/:userId', element: <DashboardNav/>,
+    {path:'/resetPwd/:token', element: <ResetPwd/>},
+    {path:'/dashboard', element: <DashboardNav/>,
         children:[
             {index: true, element: <MyLinks/>},
             {path: 'analysis', element: <AnalyticsPage/>}
@@ -25,6 +26,7 @@ const App = () => {
     return (
         <>
             <RouterProvider router={router} />
+            <Toaster/>
         </>
     );
 };
