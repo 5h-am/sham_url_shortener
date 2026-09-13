@@ -1,7 +1,7 @@
 import { useState, useActionState } from "react"
 import VisibilityOn from '../assets/visibility_on.svg?react'
 import VisibilityOff from '../assets/visibility_off.svg?react'
-import { NavLink, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { api } from '../api/api'
 import { AxiosError } from "axios"
 import toast from "react-hot-toast"
