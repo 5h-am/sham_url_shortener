@@ -1,5 +1,12 @@
 # 🌐 URL Shortener — Frontend Web Application
 
+[![Live App](https://img.shields.io/badge/Vercel-Live_App-black?logo=vercel&logoColor=white)](https://sham-url-shortener.vercel.app/)
+[![Backend API](https://img.shields.io/badge/Render-Backend_API-46E3B7?logo=render&logoColor=white)](https://sham-url-shortener-backend.onrender.com)
+
+> 🚀 **Live Web Application**: [https://sham-url-shortener.vercel.app/](https://sham-url-shortener.vercel.app/)  
+> 🔗 **Connected Backend API**: [https://sham-url-shortener-backend.onrender.com](https://sham-url-shortener-backend.onrender.com)  
+> 📑 **API Documentation (Swagger)**: [https://sham-url-shortener-backend.onrender.com/api-docs](https://sham-url-shortener-backend.onrender.com/api-docs)
+
 Modern, responsive web client for the URL Shortener application, built with **React 19**, **TypeScript**, **Vite**, **Tailwind CSS v4**, **React Router v7**, and **Recharts**. It provides a sleek landing page with instant guest link shortening, full authentication workflows, a comprehensive user dashboard for managing shortened links, and granular click analytics with interactive visual charts.
 
 ---
@@ -119,20 +126,28 @@ frontend/
 
 ## ⚙️ Environment Variables
 
-Create a `.env` file in the `frontend/` directory:
-
+### Local Development (`.env`):
 ```env
-# URL where backend Express API routes are hosted
+# URL where local backend Express API routes are hosted
 VITE_BACKEND_URL=http://localhost:3000/api/v1
 
-# Public URL of the frontend application
+# Public URL of local Vite client
 VITE_FRONTEND_URL=http://localhost:5173
 ```
 
-| Variable | Description | Default |
-|---|---|---|
-| `VITE_BACKEND_URL` | Base API URL including the `/api/v1` prefix | `http://localhost:3000/api/v1` |
-| `VITE_FRONTEND_URL` | Base URL of the Vite client server | `http://localhost:5173` |
+### Production (Vercel Environment Variables):
+```env
+# URL pointing to production Render backend API
+VITE_BACKEND_URL=https://sham-url-shortener-backend.onrender.com/api/v1
+
+# Public URL of production Vercel client
+VITE_FRONTEND_URL=https://sham-url-shortener.vercel.app
+```
+
+| Variable | Description | Production Value | Local Default |
+|---|---|---|---|
+| `VITE_BACKEND_URL` | Base API URL including the `/api/v1` prefix | `https://sham-url-shortener-backend.onrender.com/api/v1` | `http://localhost:3000/api/v1` |
+| `VITE_FRONTEND_URL` | Base URL of the client application | `https://sham-url-shortener.vercel.app` | `http://localhost:5173` |
 
 ---
 
