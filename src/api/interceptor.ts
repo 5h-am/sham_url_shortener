@@ -36,8 +36,8 @@ api.interceptors.response.use(
 
                 if(!newToken) {
                     localStorage.removeItem('accessToken')
-                    window.location.href = '/signIn'
                     toast.error("Invalid token, login again", { duration: 3000 })
+                    window.location.href = '/signIn'
                     return Promise.reject(err)
                 }
 
@@ -46,8 +46,8 @@ api.interceptors.response.use(
             }
                 
             case 403: {
-                window.location.href = '/signIn'
                 toast.error("Account has been blocked", {duration: 3000})
+                window.location.href = '/signIn'
                 return Promise.reject(err)
             }
             default:
@@ -62,7 +62,7 @@ api.interceptors.request.use(
     (config) => {
         const token = localStorage.getItem('accessToken')
         if(token) {
-            config.headers.Authorization = `Bearer ${token}`
+            config.headers.authorization = `Bearer ${token}`
         }
         return config
     },

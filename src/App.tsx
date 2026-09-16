@@ -1,4 +1,5 @@
 import "./App.css";
+import "./api/interceptor"
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { LandingPage } from "./landing/landing";
 import { SignIn } from "./auth/signIn";
@@ -9,6 +10,7 @@ import { DashboardNav } from "./dashboard/dashboard";
 import { MyLinks } from "./dashboard/myLinks";
 import { AnalyticsPage } from "./dashboard/analytics";
 import { Toaster } from "react-hot-toast";
+import { urlsLoader, analysisLoader} from "./loader";
 
 const router = createBrowserRouter([{ path: "/", element: <LandingPage /> }, {path: '/signIn', element: <SignIn/>},
     {path: '/signUp', element: <SignUp/>},
@@ -16,8 +18,8 @@ const router = createBrowserRouter([{ path: "/", element: <LandingPage /> }, {pa
     {path:'/resetPwd/:token', element: <ResetPwd/>},
     {path:'/dashboard', element: <DashboardNav/>,
         children:[
-            {index: true, element: <MyLinks/>},
-            {path: 'analysis', element: <AnalyticsPage/>}
+            {index: true, element: <MyLinks/>, loader:urlsLoader, id:'dashboard'},
+            {path: 'analysis/:urlId', element: <AnalyticsPage/>, loader: analysisLoader}
         ]
     }
 ]);
