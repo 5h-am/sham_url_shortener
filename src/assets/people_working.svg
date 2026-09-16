@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <style>
+    /* You can override colors easily via CSS */
+    svg {
+      color: #349C94; /* Set your preferred default outline color here */
+    }
+  </style>
+
+  <!-- Ground Line -->
+  <line x1="50" y1="400" x2="750" y2="400" />
+
+  <!-- Left Desk & Person -->
+  <g id="person-left">
+    <!-- Chair Left -->
+    <path d="M 120 400 L 150 280 L 110 270 A 15 15 0 0 1 120 240 L 170 240 L 180 340" />
+    <!-- Desk Left -->
+    <path d="M 190 400 L 190 280 L 350 280 L 350 400" />
+    <line x1="190" y1="290" x2="350" y2="290" />
+
+    <!-- Person Left (Woman) -->
+    <!-- Head & Hair -->
+    <circle cx="215" cy="175" r="18" />
+    <path d="M 215 157 A 20 20 0 0 1 235 175 C 235 190 220 190 215 175 Z" />
+    <path d="M 205 159 A 12 12 0 1 1 215 140" /> <!-- Hair Bun -->
+    <!-- Body & Arms -->
+    <path d="M 200 280 L 205 220 C 205 200 235 200 238 220 L 245 280" />
+    <path d="M 215 210 L 255 250 L 290 250" /> <!-- Right Arm typing -->
+    <path d="M 205 215 L 240 255 L 285 255" /> <!-- Left Arm typing -->
+    <!-- Legs -->
+    <path d="M 210 280 L 235 340 L 275 340 L 285 400" />
+
+    <!-- Laptop Left -->
+    <path d="M 280 280 L 300 220 L 340 220 L 340 280 Z" /> <!-- Screen -->
+    <path d="M 270 280 L 345 280 L 340 285 L 275 285 Z" /> <!-- Base -->
+  </g>
+
+  <!-- Right Desk & Person -->
+  <g id="person-right">
+    <!-- Chair Right -->
+    <path d="M 680 400 L 650 340 L 680 340 L 680 250 A 15 15 0 0 0 650 240 L 600 240 L 610 340" />
+    <line x1="640" y1="340" x2="640" y2="400" />
+    <!-- Desk Right -->
+    <path d="M 450 400 L 450 280 L 610 280 L 610 400" />
+    <line x1="450" y1="290" x2="610" y2="290" />
+
+    <!-- Person Right (Man) -->
+    <!-- Head & Hair -->
+    <circle cx="575" cy="175" r="18" />
+    <path d="M 557 175 C 557 150 593 150 593 175 C 585 170 565 170 557 175 Z" /> <!-- Hair -->
+    <path d="M 570 178 A 4 4 0 0 0 578 178" /> <!-- Glasses link -->
+    <circle cx="566" cy="178" r="4" />
+    <circle cx="582" cy="178" r="4" />
+    <!-- Body & Arms -->
+    <path d="M 555 280 L 560 215 C 560 198 590 198 595 215 L 600 280" />
+    <path d="M 570 210 L 530 250 L 495 250" /> <!-- Arm typing -->
+    <!-- Legs -->
+    <path d="M 570 280 L 550 340 L 510 340 L 500 400" />
+
+    <!-- Laptop Right -->
+    <path d="M 460 280 L 460 220 L 500 220 L 520 280 Z" /> <!-- Screen -->
+    <path d="M 455 280 L 530 280 L 525 285 L 460 285 Z" /> <!-- Base -->
+  </g>
+
+  <!-- Background Office Details (Light Touches) -->
+  <!-- Plant in Center -->
+  <path d="M 385 280 L 390 240 L 410 240 L 415 280 Z" /> <!-- Pot -->
+  <path d="M 400 240 C 380 220 370 190 400 180 C 430 190 420 220 400 240 Z" /> <!-- Leaf 1 -->
+  <path d="M 400 240 C 370 230 350 200 375 195 C 400 190 400 220 400 240 Z" /> <!-- Leaf 2 -->
+  <path d="M 400 240 C 430 230 450 200 425 195 C 400 190 400 220 400 240 Z" /> <!-- Leaf 3 -->
+
+  <!-- Wall Art/Frame -->
+  <rect x="360" y="60" width="80" height="90" rx="2" />
+  <path d="M 370 130 L 395 95 L 415 120 L 425 105 L 430 130" />
+  <circle cx="420" cy="85" r="5" />
+
+  <!-- Window Frame Lines -->
+  <path d="M 80 50 L 80 200 L 280 200 L 280 50" />
+  <line x1="180" y1="50" x2="180" y2="200" />
+  <path d="M 520 50 L 520 200 L 720 200 L 720 50" />
+  <line x1="620" y1="50" x2="620" y2="200" />
+</svg>

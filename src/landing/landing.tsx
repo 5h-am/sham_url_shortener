@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./landing.css";
 import Close from '../assets/close.svg?react'
+import PeopleWorking from '../assets/people_working.svg?react'
 import { NavLink } from "react-router-dom";
 import { api } from '../api/api'
 import toast from 'react-hot-toast'
@@ -90,7 +91,7 @@ export const LandingPage = () => {
             <LandingReportSection />
             <PartnersSection />
             <NavLink to='/aboutUs'>
-                <button className="about-us-btn border-b-2 border-b-(--primary-teal) px-1 pt-1 pb-0.5 w-[30%] mx-auto mt-2 flex justify-center font-semibold text-2xl hover:cursor-pointer hover:pb-1 hover:scale-105 transition-p transition-scale duration-500">
+                <button className="about-us-btn border-b-2 border-b-(--primary-teal) px-1 pt-1 pb-0.5 w-[40%] mx-auto mt-2 flex justify-center font-semibold text-2xl hover:cursor-pointer hover:pb-1 hover:scale-105 transition-p transition-scale duration-500">
                     About us
                 </button>
             </NavLink>
@@ -137,9 +138,12 @@ const HeroSection = ({
     return (
         <>
             <div className="hero-section w-[90%] mx-auto">
-                <h1 className="w-[80%] text-center mx-auto text-4xl font-extrabold">
-                    Shorten links, expand your reach
-                </h1>
+                <div className="min-[800px]:flex justify-between gap-5">
+                    <h1 className="w-[80%] text-center mx-auto text-4xl font-extrabold mb-4 min-[800px]:text-6xl min-[800px]:mt-20">
+                        Shorten links, expand your reach
+                    </h1>
+                    <PeopleWorking />
+                </div>
                 {!urlBlock ? (
                     <button
                         className="start-for-free-btn hero-section-btn text-center mask-auto bg-(--primary-teal) py-2  my-4 w-full text-white rounded border-2 border-[#246B65] text-[1.5em] font-semibold"

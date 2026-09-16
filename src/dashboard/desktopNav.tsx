@@ -5,7 +5,7 @@ export const DesktopNav = ({ handleLogout } : { handleLogout : () => void}) => {
     return (
         <>
             <div className="desktop-nav w-[20%] bg-(--primary-teal) h-screen text-white">
-                <p className="text-2xl font-semibold ms-8 pt-2">Sham</p>
+                <NavLink to='/'><p className="text-2xl font-semibold ms-8 pt-2">Sham</p></NavLink>
                 <div className="flex flex-col justify-between mt-8 grow h-[88vh]">
                     <div className="flex flex-col gap-4 text-[1.3em] ms-8">
                         <NavLink to='' className="font-medium">My Links</NavLink>

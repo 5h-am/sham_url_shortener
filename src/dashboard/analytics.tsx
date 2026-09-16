@@ -40,7 +40,7 @@ export const AnalyticsPage = () => {
         <div className="analytics w-full overflow-y-auto h-[99vh]">
             <h2 className="text-center text-2xl font-extrabold my-3">Url Analytics</h2>
             <div className="clicks-graph border-2 border-gray-500 rounded-[0.6rem] w-[90%] mx-auto mb-4">
-                <div className="flex justify-between my-3 mx-3 items-baseline">
+                <div className="flex justify-between my-3 mx-3 items-baseline min-[800px]:justify-around">
                     <h2 className="font-bold text-1xl">Clicks Over time</h2>
                     <select name="createdAt" id="createdAt" className="rounded-[0.4rem] p-1 py-1 bg-(--accent-mint)" onChange={handleGroupBy}>
                         <option value="hour">Last 1 hour</option>

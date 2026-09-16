@@ -123,7 +123,7 @@ export const MyLinks = () => {
 			</div>
 			}
 
-            <div className="filter-selects flex justify-between w-[95%] mx-auto">
+            <div className="filter-selects flex justify-between w-[93%] mx-auto">
                 <select name="createdAt" id="createdAt" className="rounded-[0.4rem] p-1 py-2 bg-(--accent-mint)" onChange={handleUrlsByDate}>
                     <option value="day">Last 24 hours</option>
                     <option value="week">Last 7 days</option>
@@ -140,10 +140,10 @@ export const MyLinks = () => {
                     const {id, urls_code, original_url, created_at,  totalclicks} = i
                     return (
                         <NavLink to={`analysis/${id}`}>
-                            <div key={id} className="w-[90%] mx-auto mt-4 flex justify-between items-baseline gap-4">
+                            <div key={id} className="w-[93%] mx-auto mt-4 flex justify-between items-baseline gap-4">
                                 <div>
                                     <p className="text-(--primary-teal)">{import.meta.env.VITE_BACKEND_URL.replace('/api/v1', '/') + urls_code}</p>
-                                    <p className="text-[8px] underline text-gray-500">{original_url}</p>
+                                    <p className="text-[10px] underline text-gray-500 w-[70%]">{original_url}</p>
                                 </div>
                                 <div className="flex flex-col text-[0.8em]">
                                     <div className="flex">
